@@ -7,7 +7,9 @@ XOR
 ```
 app-armeabi-v7a-release.apk
 
-smali_classes2\xyz\webdao\v2ray\util\EncryptUtil.smali smali_classes2\xyz\webdao\v2ray\util\HttpUtil.smali
+smali_classes2\xyz\webdao\v2ray\util\EncryptUtil.smali
+
+smali_classes2\xyz\webdao\v2ray\util\HttpUtil.smali
 ```
 
 ```java
