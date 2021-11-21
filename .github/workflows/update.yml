@@ -21,4 +21,13 @@ jobs:
       - name: run
         run: 
           pip3 install requests && python3 update.py
+      
+      - name: Commit and push if changed   # 更新node.txt
+        run: |
+          git diff
+          git config --global user.email "None"
+          git config --global user.name "talking-toaster"
+          git add node.txt
+          git commit -m "Github Action Auto Updated"
+          git push
           
