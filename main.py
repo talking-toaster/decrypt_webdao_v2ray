@@ -33,6 +33,6 @@ def decrypt(key: str, ciphertext: str or bytes):
         plaintext += chr(ord(b64_cipher[i]) ^ ord(key[i % len(key)]))
     return plaintext
 
-
-link = decrypt(get_key(), get_raw_link())
-print(link)
+if __name__=="__main__":
+    link = decrypt(get_key(), get_raw_link())
+    print(link)
